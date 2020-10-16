@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Boxe</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --texte: #333;
+            --liens: #fff;
+            --boutons: dimgrey;
+            --main: rgba(255, 255, 255, 0.87);
+        }
+
+        body {
+            background: url(img/box-1514845_1920.jpg) no-repeat;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            background-color: var(--main);
+            width: 80%;
+            margin: 0 auto;
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        /* style du header  */
+
+        header {
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            font-family: serif;
+            font-weight: 300;
+            font-size: 2em;
+            line-height: 70px;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            width: 45%;
+            height: 50px;
+            margin: 0 auto;
+        }
+
+        nav a {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--texte);
+            text-transform: uppercase;
+            padding-right: 30px;
+            padding-left: 20px;
+
+            transition: 0.5s;
+        }
+
+        nav a:hover {
+            background-color: var(--liens);
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+
+        /* style des titres  */
+
+        h2 {
+            font-weight: bold;
+            letter-spacing: 2px;
+            padding-left: 15px;
+            /* text-transform: uppercase; */
+            font-family: serif;
+        }
+
+        h3 {
+            margin: 50px 0;
+            font-weight: 300;
+            font-family: serif;
+            letter-spacing: 2px;
+            padding-left: 15px;
+            text-transform: uppercase;
+        }
+
+        /* style du conteneur  */
+
+        #conteneur p {
+            padding-left: 15px;
+            line-height: 25px;
+        }
+
+        /* ici, la première lettre des paragraphes de classe .lettrine prendra le style suivant  */
+        #conteneur p.lettrine::first-letter {
+            font-size: 2em;
+        }
+
+        /* ici,  la première ligne des paragraphes de classe .bold prendront le style suivant  */
+        #conteneur p.bold::first-line {
+            font-weight: bold;
+        }
+
+        /* la première ligne des premiers paragraphes auront un alinéa  */
+        .alinea {
+            text-indent: 5%;
+        }
+
+        /* style des images  */
+
+        .image1 {
+            width: 60%;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        .image2 {
+            width: 60%;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        /* style des boutons  */
+
+        button {
+            background-color: var(--boutons);
+            color: var(--liens);
+            padding: 8px 8px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+
+        /* style du footer  */
+
+        footer {
+            height: 70px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            text-align: center;
+            line-height: 70px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>La boxe</h1>
+            <nav>
+                <a href="#">Accueil</a>
+                <a href="#">À propos</a>
+                <a href="#">Galerie</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+
+        <div id="conteneur">
+            <h2>Les différentes disciplines</h2>
+            <article>
+                <div>
+                    <h3>La boxe anglaise</h3>
+                    <div class="image1">
+                        <img src="img/file1-776x390.jpeg" alt="Boxe anglaise">
+                    </div>
+                    <p class="bold lettrine alinea">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam reprehenderit quod hic laborum! Esse aliquid deleniti consequatur, perspiciatis vitae fugiat nesciunt numquam officia repellendus aperiam dolores alias eveniet illo sunt.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam reprehenderit quod hic laborum! Esse aliquid deleniti consequatur, perspiciatis vitae fugiat nesciunt numquam officia repellendus aperiam dolores alias eveniet illo sunt.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam reprehenderit quod hic laborum! Esse aliquid deleniti consequatur, perspiciatis vitae fugiat nesciunt numquam officia repellendus aperiam dolores alias eveniet illo sunt.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam reprehenderit quod hic laborum! Esse aliquid deleniti consequatur, perspiciatis vitae fugiat nesciunt numquam officia repellendus aperiam dolores alias eveniet illo sunt.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam reprehenderit quod hic laborum! Esse aliquid deleniti consequatur, perspiciatis vitae fugiat nesciunt numquam officia repellendus aperiam dolores alias eveniet illo sunt.</p>
+
+                    <form>
+                        <button> En savoir plus</button>
+                    </form>
+                    
+                </div>
+                <div>
+                    <h3>La boxe française</h3>
+                    <div class="image2">
+                        <img src="img/les-meilleurs-de-la-discipline.jpg" alt="Boxe française">
+                    </div>
+                    <p class="bold lettrine alinea">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam reprehenderit quod hic laborum! Esse aliquid deleniti consequatur, perspiciatis vitae fugiat nesciunt numquam officia repellendus aperiam dolores alias eveniet illo sunt.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam reprehenderit quod hic laborum! Esse aliquid deleniti consequatur, perspiciatis vitae fugiat nesciunt numquam officia repellendus aperiam dolores alias eveniet illo sunt.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam reprehenderit quod hic laborum! Esse aliquid deleniti consequatur, perspiciatis vitae fugiat nesciunt numquam officia repellendus aperiam dolores alias eveniet illo sunt.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam reprehenderit quod hic laborum! Esse aliquid deleniti consequatur, perspiciatis vitae fugiat nesciunt numquam officia repellendus aperiam dolores alias eveniet illo sunt.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam reprehenderit quod hic laborum! Esse aliquid deleniti consequatur, perspiciatis vitae fugiat nesciunt numquam officia repellendus aperiam dolores alias eveniet illo sunt.</p>
+
+                    <form>
+                        <button> En savoir plus</button>
+                    </form>                  
+                </div>
+            </article>
+        </div> <!-- fin du contenu principal -->
+
+        <footer>
+            <p>2020 &copy; Colombbus - Suresnes</p>
+        </footer>
+        
+    </main>
+</body>
+</html>
